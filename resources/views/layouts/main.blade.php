@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ trans('panel.site_title') }}</title>
+        <title>FAQ | {{ trans('panel.site_title') }}</title>
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
         <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -28,7 +28,7 @@
                 <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
                     <div class="row text-center margin-bottom-20">
                         <h1 class="white">{{ trans('panel.site_title') }}</h1>
-                        <span class="nested">Learn to use gomac</span>
+                        <span class="nested">Learn to use the platform</span>
                     </div>
                 </div>
             </div>

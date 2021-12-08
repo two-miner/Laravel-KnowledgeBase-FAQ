@@ -8,15 +8,6 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    public function index()
-    {
-        $articles = Article::with('category')
-            ->orderBy('id', 'desc')
-            ->paginate(5);
-
-        return view('articles.index', compact('articles'));
-    }
-
     public function show($slug, $article)
     {
         $article = Article::with(['tags', 'category'])

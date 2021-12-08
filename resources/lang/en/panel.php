@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'site_title' => 'Knowledge Base',
+    'site_title' => 'Singapore Bookdata',
 ];

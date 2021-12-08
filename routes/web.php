@@ -10,7 +10,6 @@ Route::get('tags/check_slug', 'TagController@check_slug')->name('tags.check_slug
 Route::get('tags/{slug}/{tag}', 'TagController@show')->name('tags.show');
 Route::get('articles/check_slug', 'ArticleController@check_slug')->name('articles.check_slug');
 Route::get('articles/{slug}/{article}', 'ArticleController@show')->name('articles.show');
-Route::get('articles', 'ArticleController@index')->name('articles.index');
 Route::get('faq', 'FaqController@index')->name('faq.index');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {

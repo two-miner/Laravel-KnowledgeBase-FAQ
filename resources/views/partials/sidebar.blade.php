@@ -4,7 +4,7 @@
             <div class="support-container">
                 <h2 class="support-heading">Need more Support?</h2>
                 If you cannot find an answer in the knowledgebase, you can
-                <a href="#">contact us</a> for further help.
+                <a href="{{ env('CONTACT_US_URL', '#') }}">contact us</a> for further help.
             </div>
         </div>
     </div>

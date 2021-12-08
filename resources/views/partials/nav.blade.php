@@ -9,11 +9,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('articles.index') }}">
-                        <i class="fa fa-file-text-o"></i> Articles
-                    </a>
-                </li>
-                <li>
                     <a href="{{ route('faq.index') }}">
                         <i class="fa fa-lightbulb-o"></i> FAQ
                     </a>
