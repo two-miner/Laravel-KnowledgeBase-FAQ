@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Setting;
 use Illuminate\Foundation\Auth\RedirectsUsers;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class PasswordController extends Controller
 {
