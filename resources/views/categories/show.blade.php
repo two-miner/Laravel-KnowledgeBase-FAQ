@@ -22,7 +22,7 @@
             <span class="cat-count">({{ $category->articles_count }})</span>
         </div>
         <hr class="style-three">
-        @foreach($category->articles as $article)
+        @foreach($articles as $article)
             <div class="panel panel-default">
                 <div class="article-heading-abb">
                     <a href="{{ route('articles.show', [$article->slug, $article->id]) }}">
