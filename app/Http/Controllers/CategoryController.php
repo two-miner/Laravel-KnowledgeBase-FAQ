@@ -13,14 +13,15 @@ class CategoryController extends Controller
         $category->loadCount('articles');
 
         $articles = $category->articles()
+            ->orderBy('id', 'ASC')
             ->paginate(5);
-     
+
         return view('categories.show', compact(['category', 'articles']));
     }
 
     public function check_slug(Request $request)
     {
-        $slug = SlugService::createSlug(Category::class, 'slug', $request->input('name',''));
+        $slug = SlugService::createSlug(Category::class, 'slug', $request->input('name', ''));
 
         return response()->json(['slug' => $slug]);
     }

@@ -20,9 +20,6 @@
                         <div class="fat-content-small padding-left-30">
                             <ul>
                                 @foreach($category->articles as $article)
-                                    @if($loop->index >= 5)
-                                        @break
-                                    @endif
                                     <li>
                                         <a href="{{ route('articles.show', [$article->slug, $article->id]) }}">
                                             <i class="fa fa-file-text-o"></i> {{ $article->title }}
