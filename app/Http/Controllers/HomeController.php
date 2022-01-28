@@ -10,7 +10,7 @@ class HomeController extends Controller
     {
         $categories = Category::withCount('articles')
             ->with(['articles' => function($query) {
-                $query->orderBy('id', 'desc');
+                $query->orderBy('id', 'asc');
             }])
             ->paginate(10);
 
